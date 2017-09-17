@@ -25,10 +25,10 @@ body {
 }
 
 .carousel {
-  height: 700px;
+  height: 500px;
 }
 
 .carousel-item {
-  width: 480px !important;
-  height: 700px !important;
+  width: 225px !important;
+  height: 400px !important;
 }
