@@ -104,7 +104,7 @@ $(document).ready(function(){
     // }).done(function(){
     //
     // })
-
+    
     $('.date').hide();
     $('.book').hide();
     $('.brag').show();
