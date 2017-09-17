@@ -24,7 +24,11 @@ body {
   background-color: #6a1b9a;
 }
 
-.carousel .carousel-item {
-  width: 300px !important;
-  height: 300px !important;
+.carousel {
+  height: 700px;
+}
+
+.carousel-item {
+  width: 480px !important;
+  height: 700px !important;
 }
