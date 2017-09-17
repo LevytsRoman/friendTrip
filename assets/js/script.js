@@ -74,7 +74,8 @@ $(document).ready(function(){
       var sorted = response.FlightResponse.FpSearch_AirLowFaresRS.SegmentReference.RefDetails.sort((a,b) => a.PTC_FareBreakdown.Adult.TotalAdultFare - b.PTC_FareBreakdown.Adult.TotalAdultFare)
 
       price = sorted[0].PTC_FareBreakdown.Adult.TotalAdultFare
-      debugger
+      // debugger
+      console.log(response)
       $('.date').hide();
       $('.book').show();
       $('.price').text(price);
