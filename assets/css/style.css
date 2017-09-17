@@ -1,3 +1,17 @@
 .logo {
   margin-left: 10px;
+  min-width: 100px;
+  min-height: 100px;
+}
+
+nav {
+  box-shadow: 0 0 0;
+}
+
+body {
+  background-color: white;
+}
+
+.picker__date-display {
+  background-color: #6a1b9a;
 }
