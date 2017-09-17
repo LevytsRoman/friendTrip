@@ -58,7 +58,7 @@
         <span>October 13, 2017 20:00</span>
       </li>
     </ul>
-    <h2 class="price">Price: $567,23</h2>
+    <h2 class="price">Price: {price}</h2>
     <span class="code"></span>
     <div class="row">
       <button class="btn waves-effect waves-light col s4 offset-s4" id="book" type="submit" name="action">Book
@@ -77,9 +77,9 @@
   </div>
 </div>
 <script>
+
 $(document).ready(function(){
   $('.carousel').carousel();
-  var price = 0
   $('.datepicker').pickadate({
     format: 'yyyy-mm-dd',
     selectMonths: true, // Creates a dropdown to control month
@@ -156,8 +156,6 @@ $(document).ready(function(){
       debugger
       $('.date').hide();
       $('.book').show();
-      $('.price').text(price);
-      $('.code').text(response.FlightResponse.FpSearch_AirLowFaresRS.CntKey);
     });
   })
 
@@ -175,5 +173,5 @@ $(document).ready(function(){
     $('.book').hide();
     $('.brag').show();
   })
-})
+  })
 </script>
