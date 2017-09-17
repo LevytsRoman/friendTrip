@@ -1,6 +1,13 @@
 $(document).ready(function(){
   $('.carousel').carousel();
-  var price = 0
+  var price = 0,
+      outboundDate = "",
+      inboundDate = "",
+      outAirport = "",
+      outBound = "",
+      inBound = "",
+      inBoundAirport = "";
+
   $('.datepicker').pickadate({
     format: 'yyyy-mm-dd',
     selectMonths: true, // Creates a dropdown to control month
@@ -74,12 +81,17 @@ $(document).ready(function(){
       var sorted = response.FlightResponse.FpSearch_AirLowFaresRS.SegmentReference.RefDetails.sort((a,b) => a.PTC_FareBreakdown.Adult.TotalAdultFare - b.PTC_FareBreakdown.Adult.TotalAdultFare)
 
       price = sorted[0].PTC_FareBreakdown.Adult.TotalAdultFare
-      // debugger
-      console.log(response)
+      console.log(inBound)
+      console.log(outBound)
+      debugger
+
       $('.date').hide();
       $('.book').show();
+      $('.leaving-date').text(new Date(outBound).toUTCString())
+      $('.arrival-date').text(new Date(inBound).toUTCString())
+
       $('.price').text(price);
-      $('.code').text(response.FlightResponse.FpSearch_AirLowFaresRS.CntKey);
+      // $('.code').text(response.FlightResponse.FpSearch_AirLowFaresRS.CntKey);
     });
   })
 
