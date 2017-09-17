@@ -1,91 +1,179 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <!-- Compiled and minified CSS -->
-    
-    <link rel="stylesheet" href="./assets/css/style.css" media="screen" title="no title">
-    <title>Friend Trip</title>
-  </head>
-  <body>
-    <nav class="white">
-      <div class="nav-wrapper">
-        <a href="/index.html" class="brand-logo"><img src="./assets/images/logo.jpg" height=60 width=60 alt="" class="logo"/></a>
-        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="sass.html">Sass</a></li>
-          <li><a href="badges.html">Components</a></li>
-          <li><a href="collapsible.html">Javascript</a></li>
-          <li><a href="mobile.html">Mobile</a></li>
-        </ul>
-        <ul class="side-nav" id="mobile-demo">
-          <li><a href="sass.html">Sass</a></li>
-          <li><a href="badges.html">Components</a></li>
-          <li><a href="collapsible.html">Javascript</a></li>
-          <li><a href="mobile.html">Mobile</a></li>
-        </ul>
-      </div>
-    </nav>
+<nav class="white">
+  <div class="nav-wrapper">
+    <a href="/index.html" class="brand-logo"><img src="/logo.jpg" height=60 width=60 alt="" class="logo"/></a>
+    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="sass.html">Sass</a></li>
+      <li><a href="badges.html">Components</a></li>
+      <li><a href="collapsible.html">Javascript</a></li>
+      <li><a href="mobile.html">Mobile</a></li>
+    </ul>
+    <ul class="side-nav" id="mobile-demo">
+      <li><a href="sass.html">Sass</a></li>
+      <li><a href="badges.html">Components</a></li>
+      <li><a href="collapsible.html">Javascript</a></li>
+      <li><a href="mobile.html">Mobile</a></li>
+    </ul>
+  </div>
+</nav>
 
-    <div class="container">
-      <div class="date">
-        <div class="carousel">
-          <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a>
-          <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"></a>
-          <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
-          <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
-          <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
-        </div>
+<div class="container">
+  <div class="date">
+    <div class="carousel">
+      <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a>
+      <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"></a>
+      <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
+      <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
+      <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
+    </div>
 
-        <div class="row">
+    <div class="row">
 
-          <div class="col s6">
-            <label class="">go somewhere this day</label>
-            <input type="text" class="datepicker outbound">
-          </div>
-
-          <div class="col s6">
-            <label class="">come back this day</label>
-            <input type="text" class="datepicker inbound">
-          </div>
-        </div>
-
-        <div class="row">
-          <button class="btn waves-effect waves-light col s4 offset-s4" id="submit" type="submit" name="action">Submit
-            <i class="material-icons right">send</i>
-          </button>
-        </div>
+      <div class="col s6">
+        <label class="">go somewhere this day</label>
+        <input type="text" class="datepicker outbound">
       </div>
 
-      <div class="book" style="display: none">
-        <ul class="collection with-header">
-          <li class="collection-item">
-            <h3>Leaving:</h3>
-            <span>September 27, 2017 20:00</span>
-          </li>
-          <li class="collection-item">
-            <h3>Returning:</h3>
-            <span>October 13, 2017 20:00</span>
-          </li>
-        </ul>
-        <h2 class="price">Price: $567,23</h2>
-        <span class="code"></span>
-        <div class="row">
-          <button class="btn waves-effect waves-light col s4 offset-s4" id="book" type="submit" name="action">Book
-            <i class="material-icons right">send</i>
-          </button>
-        </div>
-      </div>
-
-      <div class="brag" style="display: none">
-        <p>hey friends look at me I'm richer then you so I'm going on vacation suck it!!!</p>
-        <div class="row">
-          <button class="btn waves-effect waves-light col s4 offset-s4" id="book" type="submit" name="action">Brag
-            <i class="material-icons right">send</i>
-          </button>
-        </div>
+      <div class="col s6">
+        <label class="">come back this day</label>
+        <input type="text" class="datepicker inbound">
       </div>
     </div>
 
-  </body>
-</html>
+    <div class="row">
+      <button class="btn waves-effect waves-light col s4 offset-s4" id="submit" type="submit" name="action">Submit
+        <i class="material-icons right">send</i>
+      </button>
+    </div>
+  </div>
+
+  <div class="book" style="display: none">
+    <ul class="collection with-header">
+      <li class="collection-item">
+        <h3>Leaving:</h3>
+        <span>September 27, 2017 20:00</span>
+      </li>
+      <li class="collection-item">
+        <h3>Returning:</h3>
+        <span>October 13, 2017 20:00</span>
+      </li>
+    </ul>
+    <h2 class="price">Price: $567,23</h2>
+    <span class="code"></span>
+    <div class="row">
+      <button class="btn waves-effect waves-light col s4 offset-s4" id="book" type="submit" name="action">Book
+        <i class="material-icons right">send</i>
+      </button>
+    </div>
+  </div>
+
+  <div class="brag" style="display: none">
+    <p>hey friends look at me I'm richer then you so I'm going on vacation suck it!!!</p>
+    <div class="row">
+      <button class="btn waves-effect waves-light col s4 offset-s4" id="book" type="submit" name="action">Brag
+        <i class="material-icons right">send</i>
+      </button>
+    </div>
+  </div>
+</div>
+<script>
+$(document).ready(function(){
+  $('.carousel').carousel();
+  var price = 0
+  $('.datepicker').pickadate({
+    format: 'yyyy-mm-dd',
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15, // Creates a dropdown of 15 years to control year,
+    today: 'Today',
+    clear: 'Clear',
+    close: 'Ok',
+    closeOnSelect: false // Close upon selecting a date,
+  });
+
+  $("#submit").click(function(e){
+    e.preventDefault();
+    //API call here
+    // debugger
+    var outBound = $('.outbound').val();
+    var inBound = $('.inbound').val();
+    // debugger
+    // $.ajax({
+    //   url: 'https://api-dev.fareportallabs.com/air/api/search/searchflightavailability',
+    //   contenType: 'application/json',
+    //   type: 'POST',
+    //   data: {
+    //     "ResponseVersion": "VERSION41",
+    //     "FlightSearchRequest": {
+    //         "Adults": "1",
+    //         "Child": "0",
+    //         "ClassOfService": "ECONOMY",
+    //         "InfantInLap": "0",
+    //         "InfantOnSeat": "0",
+    //         "Seniors": "0",
+    //         "TypeOfTrip": "ROUNDTRIP",
+    //         "SegmentDetails": [
+    //                                 {
+    //                                 "DepartureDate": outBound,
+    //                                 "DepartureTime": "1100",
+    //                                 "Destination": "MUC",
+    //                                 "Origin": "NYC"
+    //                                 },
+    //                                 {
+    //                                 "DepartureDate": inBound,
+    //                                 "DepartureTime": "1100",
+    //                                 "Destination": "NYC",
+    //                                 "Origin": "MUC"
+    //                                 }
+    //                             ]
+    //                         }
+    //         },
+    //   beforeSend: function (xhr) {
+    //   },
+    // }).done(function(res){
+    //   debugger
+      // $('.date').hide();
+      // $('.book').show();
+    // })
+    var settings = {
+      "async": true,
+      "crossDomain": true,
+      "url": "https://api-dev.fareportallabs.com/air/api/search/searchflightavailability",
+      "method": "POST",
+      "headers": {
+        "content-type": "application/json",
+        "authorization": "Basic ci5sZXZ5dHNAZ21haWwuY29tOkRDMTk2NDg3",
+        "cache-control": "no-cache",
+        "postman-token": "9e54cf48-a6ae-99be-ea34-dbbbadd1cd9d"
+      },
+      "processData": false,
+      "data": `{\n\"ResponseVersion\": \"VERSION41\",\n\"FlightSearchRequest\": {\n    \"Adults\": \"1\",\n    \"Child\": \"0\",\n    \"ClassOfService\": \"ECONOMY\",\n    \"InfantInLap\": \"0\",\n    \"InfantOnSeat\": \"0\",\n    \"Seniors\": \"0\",\n    \"TypeOfTrip\": \"ROUNDTRIP\",\n    \"SegmentDetails\": [\n                            {\n                            \"DepartureDate\": \"${outBound}\",\n                            \"DepartureTime\": \"1100\",\n                            \"Destination\": \"MUC\",\n                            \"Origin\": \"NYC\"\n                            },\n                            {\n                            \"DepartureDate\": \"${inBound}\",\n                            \"DepartureTime\": \"1100\",\n                            \"Destination\": \"NYC\",\n                            \"Origin\": \"MUC\"\n                            }\n                        ]\n                    }\n    }`
+    }
+
+    $.ajax(settings).done(function (response) {
+      var sorted = response.FlightResponse.FpSearch_AirLowFaresRS.SegmentReference.RefDetails.sort((a,b) => a.PTC_FareBreakdown.Adult.TotalAdultFare - b.PTC_FareBreakdown.Adult.TotalAdultFare)
+
+      price = sorted[0].PTC_FareBreakdown.Adult.TotalAdultFare
+      debugger
+      $('.date').hide();
+      $('.book').show();
+      $('.price').text(price);
+      $('.code').text(response.FlightResponse.FpSearch_AirLowFaresRS.CntKey);
+    });
+  })
+
+  $("#book").click(function(e){
+    e.preventDefault();
+    //API call here
+
+    // $.ajax({
+    //
+    // }).done(function(){
+    //
+    // })
+
+    $('.date').hide();
+    $('.book').hide();
+    $('.brag').show();
+  })
+})
+</script>
